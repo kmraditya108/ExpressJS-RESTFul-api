@@ -2,10 +2,13 @@ const express = require('express');
 const router = express.Router();
 
 // Mock data array for testing
-const users = [
-    { id: 1, name: "Alice" },
-    { id: 2, name: "Bob" }
-];
+// const users = [
+//     { id: 1, name: "Alice" },
+//     { id: 2, name: "Bob" }
+// ];
+
+// Mock data for testing (shifted here: '../../data/usersData')
+const users = require('../../data/usersData');
 
 
 // on http://localhost:3000 the browser screen will have the text :'Hello Express from a clean Express Router!!!'
