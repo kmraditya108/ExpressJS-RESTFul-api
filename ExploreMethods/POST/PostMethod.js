@@ -12,7 +12,7 @@ router.post('/api/users', (req, res) => {
 
     // Validate the input data safely
     if (!newName) {
-        throw new BadRequestError('Name field is required -- Custom Error')
+        throw new BadRequestError('Name field is required.')
         // return res.status(400).json({error: "Name field is required"});
     }
 
